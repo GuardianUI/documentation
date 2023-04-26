@@ -28,7 +28,7 @@
 
 #### Installing Playwright Browsers
 
-* `npx playwright`
+* `npx playwright install`
 
 ## Installing the Framework
 
@@ -36,3 +36,6 @@
 
 ### > yarn add
 
+
+
+## Configuring the Framework
