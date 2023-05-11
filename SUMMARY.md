@@ -20,15 +20,10 @@
 * [Writing Your First E2E Test](end-to-end-testing/writing-your-first-e2e-test.md)
 * [Test Examples](end-to-end-testing/test-examples.md)
 
-## Component Testing
-
-* [Overview](component-testing/overview.md)
-* [Writing Your First Component Test](component-testing/writing-your-first-component-test.md)
-
 ## API
 
 * [GUI](api/gui.md)
-* [Playwright](api/playwright.md)
+* [Page](api/playwright.md)
 
 ## Guides
 
