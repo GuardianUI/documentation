@@ -11,16 +11,17 @@ GuardianUI tests do a few core things:
 
 Setting up your first test is very simple. Create a `tests` folder and create a file with the following naming convention inside: `file_name.spec.ts`.
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>// tests/example.spec.ts
-</strong>import { test } from "@guardianui/test";
-<strong>import { expect } from "@playwright/test";
-</strong>
+```typescript
+// tests/example.spec.ts
+import { test } from "@guardianui/test";
+import { expect } from "@playwright/test";
+
 test("example test", async ({ page, gui }) => {
     await page.goto("https://guardianui.com");
     
     await expect("text=Guardian").toBeTruthy();
 });
-</code></pre>
+```
 
 
 
