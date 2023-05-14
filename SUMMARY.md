@@ -28,24 +28,7 @@
 ## Guides
 
 * [Actions](guides/actions.md)
-* [Assertions](guides/assertions.md)
 * [Conditional Testing](guides/conditional-testing.md)
-* [Dialogs](guides/dialogs.md)
-* [Evaluating Javascript Commands](guides/evaluating-javascript-commands.md)
-* [Events](guides/events.md)
-* [Locators](guides/locators.md)
 * [Mocking APIs](guides/mocking-apis.md)
 * [Mocking Subgraph](guides/mocking-subgraph.md)
-* [Navigation](guides/navigation.md)
 * [Screenshots](guides/screenshots.md)
-* [Video](guides/video.md)
-
-## References
-
-* [Best Practices](references/best-practices.md)
-
-## Test Migration
-
-* [Cypress](test-migration/cypress.md)
-* [Puppeteer](test-migration/puppeteer.md)
-* [React Testing Library](test-migration/react-testing-library.md)
