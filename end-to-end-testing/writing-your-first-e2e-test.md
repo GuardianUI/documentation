@@ -1,6 +1,6 @@
 # Writing Your First E2E Test
 
-There are eight phases to writing your first GuardianUI end-to-end test:
+There are eight phases to writing your first e2e test using GuardianTest:
 
 1. Forked network initialization
 2. Navigation to the dApp
@@ -13,9 +13,9 @@ There are eight phases to writing your first GuardianUI end-to-end test:
 
 
 
-### Phase 1: Forked Network Initialization
+## Phase 1: Forked Network Initialization
 
-In order to be able to set network state and perform network interactions with expending real tokens, every test that plans to interact with a live network needs to begin by initializing a forked network.
+In order to set network state and perform network interactions without expending real tokens, every test that plans to interact with a live network needs to begin by initializing a forked network.
 
 <pre class="language-typescript"><code class="lang-typescript">import { test } from "@guardianui/test";
 
@@ -31,7 +31,7 @@ test.describe("Olympus Example Suite", () => {
 
 
 
-### Phase 2: Navigation To The dApp
+## Phase 2: Navigation To The dApp
 
 To navigate to a dApp, provide the framework with the live URL where you wish to perform the test. Use the Playwright `page.goto(url)` asynchronous function to do this.
 
@@ -52,9 +52,9 @@ test.describe("Olympus Example Suite", () => {
 
 
 
-### Phase 3: Wallet Initialization
+## Phase 3: Wallet Initialization
 
-In order for the test to behave correctly and consistently, we have to initialize the injected wallet with the chain ID of the network it should be connected to.
+In order for the test to behave correctly and consistently, you will need to initialize the injected wallet with the chain ID of the network it should be connected to.
 
 <pre class="language-typescript"><code class="lang-typescript">import { test } from "@guardianui/test";
 
@@ -76,9 +76,9 @@ test.describe("Olympus Example Suite", () => {
 
 
 
-### Phase 4: Wallet State Mocking
+## Phase 4: Wallet State Mocking
 
-The test wallet injected into the browser during these tests is by default empty. We can provide it with gas tokens, ERC20 tokens, and set allowances in a few quick lines.
+The test wallet injected into the browser during these tests is empty by default. We can provide it with gas tokens, ERC20 tokens, and set allowances in a few quick lines.
 
 <pre class="language-typescript"><code class="lang-typescript">import { test } from "@guardianui/test";
 
@@ -109,11 +109,11 @@ test.describe("Olympus Example Suite", () => {
 
 
 
-### Phase 5: Wallet Connection
+## Phase 5: Wallet Connection
 
 The wallet connection flow will vary slightly from dApp to dApp, but usually requires locating a **"Connect Wallet"** button, and then selecting the **"Metamask"** option in an ensuing modal. While our wallet is not actually Metamask, it is surfaced to apps in a way that looks like Metamask to avoid issues where sites may not have an option to select an injected wallet.
 
-To get a sense of what to write in the test, manually go to your live application and identify the visual and textual elements you need to click to go from the not-connected state to the connected state. Use the "inspect element" tool in browsers to help with this.
+To get a sense of what to write in the test, manually go to your live application and identify the visual and textual elements you need to click to go from the not-connected state to the connected state. Use the "inspect element" tool in browsers to help with this. See examples in our [test examples](https://app.gitbook.com/o/aEzOvP1ODgbzLwqZ2irE/s/6blK04TyOYOkA5ZEQW4b/end-to-end-testing/test-examples) section. 
 
 <pre class="language-typescript"><code class="lang-typescript">import { test } from "@guardianui/test";
 
@@ -215,12 +215,12 @@ test.describe("Olympus Example Suite", () => {
 
 ### Phase 7: Transaction Submission and Verification
 
-One of the primary novel behaviors of the GuardianUI Test framework is its ability to validate information around network transactions following a site interaction like a button click. Doing this requires two pieces of information:
+One of the primary novel behaviors of the GuardianTest framework is its ability to validate information around network transactions following a site interaction such as a button click. Doing this requires two pieces of information:
 
 1. The Playwright locator for the button to interact with.
-2. The contract address that the button click should trigger a transaction with or the contract address that the button click should trigger an ERC20 approval for.
+2. The contract address the button click should trigger a transaction with or an ERC20 approval for.
 
-The GuardianUI Test framework takes care of the button click itself behind the scenes.
+The GuardianTest framework takes care of the button click itself behind the scenes.
 
 <pre class="language-typescript"><code class="lang-typescript">import { test } from "@guardianui/test";
 
