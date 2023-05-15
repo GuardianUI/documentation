@@ -1,6 +1,6 @@
 # Page
 
-This is a shortened version of the [Playwright Page documention](https://playwright.dev/docs/api/class-page) with the methods that may be most frequently used when testing with the GuardianUI framework.
+This is a shortened version of the [Playwright Page documention](https://playwright.dev/docs/api/class-page) with methods that may be most frequently used when testing with GuardianTest.
 
 The Page class provides methods to interact with a tab within a browser instance.
 
