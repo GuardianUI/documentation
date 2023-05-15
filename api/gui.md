@@ -8,7 +8,7 @@ description: GUI provides methods related to chain interactions
 
 ### initializeChain
 
-Spawns a forked network using Foundry's Anvil using a specific chain ID and optionally a block number.
+Spawns a forked network using Foundry's [Anvil](https://github.com/foundry-rs/foundry/tree/master/anvil) using a specific chain ID and (optionally) a block number.
 
 #### Inputs
 
@@ -46,7 +46,7 @@ Updates the wallet provider in the injected wallet to use a specific chain ID.
 
 #### Inputs
 
-* `chainId` - The network chain ID to update the wallet provider to
+* `chainId` - The desired network chain ID to update the wallet provider
 
 #### Usage
 
@@ -63,9 +63,9 @@ Sets the allowance of an address to spend the test wallet's ERC20 tokens to a sp
 
 #### Inputs
 
-* `token` - The address of the token to set the allowance on
-* `spenderAddress` - The address to approve to spend the test wallet's tokens
-* `amount` - The amount to approve the spender to spend. This needs to have the appropriate number of decimals (i.e. 1 ETH is "1000000000000000000")
+* `token` - The designated token address for balance allocation (e.g. USDC on Ethereum is [0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48))
+* `spenderAddress` - The address to authorize for spending the tokens in the test wallet.
+* `amount` - The amount to be approve to be spent by the spender. This needs to have the appropriate number of decimals (i.e. 1 ETH is "1000000000000000000")
 
 #### Usage
 
@@ -82,7 +82,7 @@ Sets an ERC20 token's balance for the test wallet.
 
 #### Inputs
 
-* `token` - The address to set the balance of
+* `token` - The designated token address for balance allocation.
 * `amount` - The amount of tokens to give the test wallet. This needs to have the appropriate number of decimals (i.e. 1 ETH is "1000000000000000000")
 
 #### Usage
@@ -119,7 +119,7 @@ Arbitrarily sets a storage slot on a contract to a specific value.
 
 * `contract` - The contract address to set the storage slot on
 * `slot` - The keccak256'd storage slot to set
-* `value` - The value to set the storage slot to
+* `value` - The assigned value for the storage slot
 
 #### Usage
 
@@ -134,12 +134,12 @@ await gui.setContractStorageSlot("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", s
 
 ### validateContractInteraction
 
-Checks that the `eth_sendTransaction` or `eth_sendRawTransaction` request following a button click is interacting with the correct contract, or providing approval to the correct contract.
+Checks that the `eth_sendTransaction` or `eth_sendRawTransaction` request following a button click is interacting with the correct contract or providing approval to the correct contract.
 
 #### Inputs
 
 * `locator` - The Playwright locator string of the button to click
-* `targetContract` - The contract address that the button should trigger an interaction with
+* `targetContract` - The contract address the button should trigger an interaction with
 
 #### Usage
 
