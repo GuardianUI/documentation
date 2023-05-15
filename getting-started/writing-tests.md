@@ -7,7 +7,7 @@ GuardianUI tests do a few core things:
 * Make general assertions about the state of a site
 * Make assertions about contract interactions on a site
 
-### Writing Your First Test
+## Writing Your First Test
 
 Setting up your first test is very simple. Create a `tests` folder and create a file with the following naming convention inside: `file_name.spec.ts`.
 
@@ -25,9 +25,9 @@ test("example test", async ({ page, gui }) => {
 
 
 
-### Initializing Chains and Wallets
+## Initializing Chains and Wallets
 
-Every test automatically starts with an empty injected wallet connected to Ethereum mainnet. There is a simple command to initiate a fork to begin mocking state and performing interactions. In the event you are changing chains from Ethereum mainnet you also have to instruct the wallet object of what chain ID to update itself to AFTER the `page.goto` command.
+Every test automatically starts with an empty injected wallet connected to Ethereum mainnet. There is a simple command to initiate a fork to begin mocking state and performing interactions. In the event you are testing on a chain other than Ethereum mainnet, you also have to instruct the wallet object of which chain ID to update itself to AFTER the `page.goto` command.
 
 ```typescript
 // tests/example.spec.ts
@@ -49,9 +49,9 @@ test("example test", async ({ page, gui }) => {
 
 
 
-### Mocking Wallet State
+## Mocking Wallet State
 
-The test wallet starts empty. You can give it a gas token balance (ETH, MATIC, etc), ERC20 balances, and even set allowances for contracts to spend ERC20 tokens in a few simple commands
+The test wallet starts empty. You can easily give it gas token balance (ETH, MATIC, etc), ERC20 balances, and even set allowances for contracts to spend ERC20 tokens in a few simple commands
 
 ```typescript
 // tests/example.spec.ts
@@ -80,11 +80,11 @@ test("example test", async ({ page, gui }) => {
 
 
 
-### Performing Actions
+## Performing Actions
 
-Actions within tests generally boil down to navigation and interaction. For a more thorough overview, head over to the [Playwright documentation](https://playwright.dev/docs/writing-tests#actions).
+Actions within tests generally consist of navigation and interaction. For a more thorough overview, please review the [Playwright documentation](https://playwright.dev/docs/writing-tests#actions).
 
-#### Navigation
+### Navigation
 
 Tests begin with navigating to a specific URL.
 
@@ -92,16 +92,20 @@ Tests begin with navigating to a specific URL.
 await page.goto("https://guardianui.com");
 ```
 
-#### Interaction
+### Interaction
 
-Performing interactions involves two pieces. The locator of the object to interact with (for more information, check out the [Playwright Locators API documentation](https://playwright.dev/docs/locators)), and the action to take. By default Playwright waits for an element to be actionable before attempting to perform an action.
+Performing interactions involves two pieces. 
+* The locator of the object to interact with (for more information, please see [Playwright Locators API documentation](https://playwright.dev/docs/locators))
+* the action to take. 
+
+By default, Playwright waits for an element to be actionable before attempting to perform an action.
 
 ```typescript
 // Click the button with text "Click Me!"
 await page.locator("button:has-text('Click Me!')").click();
 ```
 
-Playwright has a robust suite of actions built into the Locator API, the most common are the following:
+Playwright has a robust suite of actions built into the Locator API. The most common are the following:
 
 | Action                   | Behavior                                        |
 | ------------------------ | ----------------------------------------------- |
@@ -117,9 +121,9 @@ Playwright has a robust suite of actions built into the Locator API, the most co
 
 
 
-### Making General Assertions
+## Making General Assertions
 
-Playwright natively includes test assertions by way of an `expect` function. For more information on the available functionality of `expect`, check out the [Playwright Assertions documentation](https://playwright.dev/docs/test-assertions).
+Playwright natively includes test assertions by way of an `expect` function. For more information on the available functionality of `expect`, please see the [Playwright Assertions documentation](https://playwright.dev/docs/test-assertions).
 
 There are generic matchers like `toEqual`, `toContain`, `toBeTruthy`, or `toBeFalsy` that perform simple checks on the value or state of a locator.
 
@@ -145,9 +149,9 @@ There are also many async assertions which wait until the expected condition is 
 
 
 
-### Making Contract Interaction Assertions
+## Making Contract Interaction Assertions
 
-GuardianUI Test allows you to make assertions around what contract interactions occur when you click a button. The command used for this handles both the clicking of the button, and the verification of the interaction.
+GuardianTest allows you to make assertions around what contract interactions occur when you click a button. The command used for this handles both the clicking of the button and the verification of the interaction.
 
 ```typescript
 // Assert that the stake button triggers an interaction with the Olympus staking contract
@@ -156,9 +160,9 @@ await gui.validateContractInteraction("button:has-text('Stake')", "0xb63cac38424
 
 
 
-### Using Hooks
+## Using Hooks
 
-You can use test hooks to define groups of tests, or hooks like `test.beforeAll`, `test.beforeEach`, `test.afterAll`, and `test.afterEach` to perform reused sets of actions before/after each test or as setup/teardown for test suites. For more information visit the [Playwright Test Hooks documentation](https://playwright.dev/docs/api/class-test).
+You can use test hooks to define groups of tests, or hooks such as `test.beforeAll`, `test.beforeEach`, `test.afterAll`, and `test.afterEach` to perform reused sets of actions before/after each test or as setup/teardown for test suites. For more information visit the [Playwright Test Hooks documentation](https://playwright.dev/docs/api/class-test).
 
 ```typescript
 // tests/example.spec.ts
@@ -197,9 +201,9 @@ test.describe("hooks example", () => {
 
 
 
-### Ending a Test
+## Ending a Test
 
-To end a test we have to teardown the Anvil fork so that there aren't collisions in future tests trying to spin up new forks on the same port.
+To end a test, you need to tear down the Anvil fork so there aren't collisions in future tests trying to spin up new forks on the same port.
 
 ```typescript
 await gui.killChain();
