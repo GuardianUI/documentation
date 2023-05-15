@@ -1,6 +1,6 @@
 # Mocking APIs
 
-Playwright provides systems to track or mock and modify any network requests that a page does.
+Playwright provides systems to track or mock and modify any network requests that a page creates.
 
 
 
