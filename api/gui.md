@@ -65,7 +65,7 @@ Sets the allowance of an address to spend the test wallet's ERC20 tokens to a sp
 
 * `token` - The designated token address for balance allocation (e.g. USDC on Ethereum is [0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48))
 * `spenderAddress` - The address to authorize for spending the tokens in the test wallet.
-* `amount` - The amount to be approve to be spent by the spender. This needs to have the appropriate number of decimals (i.e. 1 ETH is "1000000000000000000")
+* `amount` - The amount to be approved to be spent by the spender. This needs to have the appropriate number of decimals (i.e. 1 ETH is "1000000000000000000")
 
 #### Usage
 
