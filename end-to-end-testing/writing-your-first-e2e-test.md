@@ -1,6 +1,6 @@
 # Writing Your First E2E Test
 
-There are eight phases to writing your first e2e test using GuardianTest:
+There are eight phases to writing your first E2E test using GuardianTest:
 
 1. Forked network initialization
 2. Navigation to the dApp
