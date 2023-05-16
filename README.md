@@ -34,4 +34,4 @@ Learn more about StoryCheck and how you can integrate it into your testing workf
 
 ## Mission
 
-Our mission is simple. We aim to reduce the risk to users and teams that choose to partake in the crypto space. Improving testing and monitoring tooling is the primary focus at the moment.
+Our mission is simple. We aim to make it easy for web3 developers to create reliable, robust, and safe applications for users. We are currently focused on improving E2E testing and monitoring.
