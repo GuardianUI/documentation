@@ -12,7 +12,7 @@ It extends the popular [Playwright](https://playwright.dev/) testing framework s
 * Engage with local deployments, staging deployments, OR live production
 * Perform tests on any EVM compatible chain
 * Pin tests to any block
-* Interact with a site with a wallet
+* Interact with a site using a wallet
 * Mock ERC20 balances and allowances
 * Validate target contract addresses from app interactions
 * Perform any other actions or validation Playwright offers
