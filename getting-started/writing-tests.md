@@ -1,6 +1,6 @@
 # Writing Tests
 
-GuardianUI tests do a few core things:
+GuardianTest tests enable a few core things:
 
 * Perform actions on a website
 * Mock network states
@@ -51,7 +51,7 @@ test("example test", async ({ page, gui }) => {
 
 ## Mocking Wallet State
 
-The test wallet starts empty. You can easily give it gas token balance (ETH, MATIC, etc), ERC20 balances, and even set allowances for contracts to spend ERC20 tokens in a few simple commands
+The test wallet starts empty. You can easily give it a gas token balance (ETH, MATIC, etc), ERC20 balances, and even set allowances for contracts to spend ERC20 tokens in a few simple commands.
 
 ```typescript
 // tests/example.spec.ts
@@ -96,9 +96,9 @@ await page.goto("https://guardianui.com");
 
 Performing interactions involves two pieces. 
 * The locator of the object to interact with (for more information, please see [Playwright Locators API documentation](https://playwright.dev/docs/locators))
-* the action to take. 
+* The action to take. 
 
-By default, Playwright waits for an element to be actionable before attempting to perform an action.
+By default, Playwright waits for an element to be actionable before attempting to perform the action.
 
 ```typescript
 // Click the button with text "Click Me!"
@@ -203,7 +203,7 @@ test.describe("hooks example", () => {
 
 ## Ending a Test
 
-To end a test, you need to tear down the Anvil fork so there aren't collisions in future tests trying to spin up new forks on the same port.
+To end a test, you need to tear down the Anvil fork so there won't be collisions in future tests trying to spin up new forks on the same port.
 
 ```typescript
 await gui.killChain();
