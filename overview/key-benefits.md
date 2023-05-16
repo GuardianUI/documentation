@@ -10,7 +10,7 @@ The frameworks that only work in the very narrow unit test developer environment
 
 The frameworks that work by injecting a full browser extension tend to experience various issues with difficult UX and brittleness. Specifically, the framework constantly needs to be updated to chase supporting updates from wallet providers such as MetaMask. Additionally, by attempting to interact with a browser extension in a simulated browser environment such as Cypress or Playwright, these frameworks introduce additional potential points of failure because these environments weren't originally intended to support such interactions with browser extensions. 
 
-GuardianTest approaches things differently. By creating a wallet provider object that follows the same base interface that almost every major wallet provider utilizes (EIP-1193), injecting that directly into `window.ethereum`, and having it auto-sign when necessary for actions such as sending transactions or fulfilling signatures, GuardianTest achieves generality and avoid brittleness.
+GuardianTest approaches things differently. By creating a wallet provider object that follows the same base interface that almost every major wallet provider utilizes (EIP-1193), injecting that directly into `window.ethereum`, and having it auto-sign when necessary for actions such as sending transactions or fulfilling signatures, GuardianTest achieves generality and avoids brittleness.
 
 
 ## EVM Network Interaction
