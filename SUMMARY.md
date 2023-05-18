@@ -3,32 +3,51 @@
 ## Overview
 
 * [GuardianUI Overview](README.md)
-* [Key Benefits](overview/key-benefits.md)
-* [Framework Roadmap](overview/framework-roadmap.md)
 
-## Getting Started
+## Platform
 
-* [Installation](getting-started/installation.md)
-* [Writing Tests](getting-started/writing-tests.md)
-* [Running Tests](getting-started/running-tests.md)
-* [CI/CD Integrations](getting-started/ci-cd-integrations.md)
-* [Monitoring Integrations](getting-started/monitoring-integrations.md)
+* [GuardianTest](platform/readme/README.md)
+  * [Overview](platform/readme/overview/README.md)
+    * [Key Benefits](platform/readme/overview/key-benefits.md)
+    * [Framework Roadmap](platform/readme/overview/framework-roadmap.md)
+    * [Supported Chains](platform/readme/overview/supported-chains.md)
+    * [End-to-End Testing Overview](platform/readme/overview/end-to-end-testing-overview.md)
+  * [Getting Started](platform/readme/getting-started/README.md)
+    * [Installation](platform/readme/getting-started/installation.md)
+    * [Writing Tests](platform/readme/getting-started/writing-your-first-e2e-test.md)
+    * [Running Tests](platform/readme/getting-started/running-tests.md)
+    * [Test Examples](platform/readme/getting-started/test-examples.md)
+  * [API](platform/readme/api/README.md)
+    * [GUI](platform/readme/api/gui.md)
+    * [Playwright](platform/readme/api/playwright.md)
+  * [Integrations](platform/readme/integrations/README.md)
+    * [CI/CD Integrations](platform/readme/integrations/ci-cd-integrations.md)
+    * [Monitoring Integrations](platform/readme/integrations/monitoring-integrations.md)
+  * [Guides](platform/readme/guides/README.md)
+    * [Actions](platform/readme/guides/actions.md)
+    * [Mocking APIs](platform/readme/guides/mocking-apis.md)
+    * [Mocking Subgraph](platform/readme/guides/mocking-subgraph.md)
+    * [Screenshots](platform/readme/guides/screenshots.md)
+* [Continuous Monitoring](platform/continuous-monitoring/README.md)
+  * [Monitoring](platform/continuous-monitoring/monitoring/README.md)
+    * [How We Run Checks](platform/continuous-monitoring/monitoring/how-we-run-checks.md)
+    * [Check Results](platform/continuous-monitoring/monitoring/check-results.md)
+    * [How We Store Data](platform/continuous-monitoring/monitoring/how-we-store-data.md)
+  * [Browser Checks](platform/continuous-monitoring/browser-checks/README.md)
+    *
+    * [Request Custom Test Writing](platform/continuous-monitoring/browser-checks/request-custom-test-writing.md)
+    * [Submitting Tests for Monitoring](platform/continuous-monitoring/browser-checks/submitting-tests-for-monitoring.md)
+  * [Alerts](platform/continuous-monitoring/alerts/README.md)
+    * [Alert States](platform/continuous-monitoring/alerts/alert-states.md)
+    * [Email](platform/continuous-monitoring/alerts/email.md)
+    * [Discord](platform/continuous-monitoring/alerts/discord.md)
+  * [Accounts and Users](platform/continuous-monitoring/accounts-and-users/README.md)
+    * [Role-Based Permissions](platform/continuous-monitoring/accounts-and-users/role-based-permissions.md)
+    * [Creating a New Workspace](platform/continuous-monitoring/accounts-and-users/creating-a-new-workspace.md)
+    * [Adding New Team Members](platform/continuous-monitoring/accounts-and-users/adding-new-team-members.md)
+* [Storycheck (Beta)](platform/storycheck-beta.md)
 
-## End-to-End Testing
+## Legal
 
-* [Overview](end-to-end-testing/overview.md)
-* [Writing Your First E2E Test](end-to-end-testing/writing-your-first-e2e-test.md)
-* [Test Examples](end-to-end-testing/test-examples.md)
-
-## API
-
-* [GUI](api/gui.md)
-* [Page](api/playwright.md)
-
-## Guides
-
-* [Actions](guides/actions.md)
-* [Conditional Testing](guides/conditional-testing.md)
-* [Mocking APIs](guides/mocking-apis.md)
-* [Mocking Subgraph](guides/mocking-subgraph.md)
-* [Screenshots](guides/screenshots.md)
+* [Service Terms and Agreement](legal/gui.md)
+* [Privacy Policy](legal/playwright.md)
