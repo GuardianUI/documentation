@@ -17,5 +17,5 @@ Learn more about StoryCheck and how you can integrate it into your testing workf
 {% embed url="https://www.youtube.com/watch?v=vpLgTxvpM2w" %}
 
 {% hint style="info" %}
-Tests written with Storycheck are not currently configured with our continuous monitoring system.
+Tests written with Storycheck are not currently supported by our continuous monitoring system.&#x20;
 {% endhint %}

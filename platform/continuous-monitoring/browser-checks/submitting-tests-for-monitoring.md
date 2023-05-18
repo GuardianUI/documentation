@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-There are three ways for you to create tests that can be integrated with our monitoring system:
+There are two ways for you to create tests that can be integrated with our monitoring system:
 
 1. You write the tests locally or in github using GuardianTest
 2. We write and submit your tests for you. _Please contact us using_ [_this form_](https://airtable.com/shrIzrQxUZqBOKabG) _if you're interested in this option._
