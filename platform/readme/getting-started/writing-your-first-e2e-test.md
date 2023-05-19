@@ -1,3 +1,7 @@
+---
+description: Make sure to name your files using the testName.gui.ts naming convention
+---
+
 # Writing Tests
 
 ## Core Playwright Overview
