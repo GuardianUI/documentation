@@ -4,7 +4,7 @@
 
 ## GuardianUI Ecosystem
 
-### [GuardianTest](platform/readme/)
+### [GuardianTest](platform/guardian-test/)
 
 The GuardianUI Test framework ("GuardianTest") is an open source E2E testing framework developed to suit the demands of crypto organizations and developers.
 
