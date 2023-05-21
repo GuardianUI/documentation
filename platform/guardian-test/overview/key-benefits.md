@@ -26,12 +26,12 @@ It creates a mocked network at the exact time the developer wants to achieve clo
 
 ## Simple Chain State Mocking
 
-The framework can mock gas token balances (ETH or MATIC), ERC20 balances, or ERC20 allowances extremely easily with just a single line command. It can also mock the storage of any contract albeit with slightly more difficult UX as the developer needs to know the encoded slot to which to set the storage.
+The framework can mock gas token balances (ETH or MATIC), ERC20 balances, or ERC20 allowances extremely easily with just a single line command. It can also mock the storage of any contract (albeit with a slightly more difficult UX as the developer needs to know the encoded slot to which to set the storage).
 
-### Chain Interaction Validation
+## Chain Interaction Validation
 
-Developers can validate a button click in their frontend triggers an interaction with the correct contract or grants ERC20 approvals to the correct contract.
+Developers can validate that a button click in their frontend triggers an interaction with the correct contract or grants ERC20 approvals to the correct contract. This is important to check whether the contract on the live frontend has not been changed.
 
-### Flexibility
+## Flexibility
 
 Alongside all of the above, the framework can be used to do anything [Playwright](https://github.com/microsoft/playwright) would do normally, including validating the navigability of a site, the copy/layout of a site, or even intercept and mock network requests.

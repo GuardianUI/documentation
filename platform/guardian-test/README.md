@@ -7,7 +7,7 @@ description: >-
 
 # GuardianTest
 
-GuardianTest is an open source E2E testing framework developed to suit the demands of crypto organizations and developers.
+GuardianTest is an [open source](https://github.com/GuardianUI/GuardianTest) E2E testing framework developed to suit the demands of crypto projects and developers.
 
 It extends the popular [Playwright](https://playwright.dev/) testing framework so developers can easily:
 
@@ -18,4 +18,3 @@ It extends the popular [Playwright](https://playwright.dev/) testing framework s
 * Mock ERC20 balances and allowances
 * Validate target contract addresses from app interactions
 * Perform any other actions or validation Playwright offers
-
