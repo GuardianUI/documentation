@@ -6,7 +6,7 @@
 
 ## Platform
 
-* [GuardianTest](platform/readme/README.md)
+* [GuardianTest](platform/readme/GuardianTest.md)
   * [Overview](platform/readme/overview/README.md)
     * [Key Benefits](platform/readme/overview/key-benefits.md)
     * [Framework Roadmap](platform/readme/overview/framework-roadmap.md)
@@ -49,5 +49,5 @@
 
 ## Legal
 
-* [Service Terms and Agreement](legal/gui.md)
-* [Privacy Policy](legal/playwright.md)
+* [Service Terms and Agreement](legal/service-terms-and-agreement.md)
+* [Privacy Policy](legal/privacy-policy.md)
