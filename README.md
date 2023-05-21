@@ -1,6 +1,6 @@
 # GuardianUI Overview
 
-[GuardianUI](https://www.guardianui.com/) is an end-to-end testing and monitoring platform for web3 apps. We offer a suite of products designed to improve frontend security and UX in the crypto space, including our open source testing framework - [GuardianTest](platform/readme/).
+[GuardianUI](https://www.guardianui.com/) is an end-to-end testing and monitoring platform for web3 apps. We offer a suite of products designed to improve frontend security and UX in the crypto space, including our open source testing framework - [GuardianTest](platform/guardian-test/).
 
 ## GuardianUI Ecosystem
 
