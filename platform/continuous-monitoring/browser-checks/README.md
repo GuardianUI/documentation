@@ -18,9 +18,9 @@ Your browser checks should verify:
 
 The combination of automated interactions and assertions leads to confidence that your app works as expected.
 
-GuardianUI's monitoring system uses tests written in [GuardianTest](https://app.gitbook.com/o/aEzOvP1ODgbzLwqZ2irE/s/6blK04TyOYOkA5ZEQW4b/\~/changes/15/platform/readme), a custom modification to the popular [Playwright](https://github.com/microsoft/playwright) framework, to power your browser checks.&#x20;
+GuardianUI's monitoring system uses tests written in [GuardianTest](/platform/guardian-test/), a custom modification to the popular [Playwright](https://github.com/microsoft/playwright) framework, to power your browser checks.&#x20;
 
-For examples of valid browser checks and instructions for how to create them, see [Writing Tests](broken-reference) and [Test Examples](../../readme/getting-started/test-examples.md).
+For examples of valid browser checks and instructions for how to create them, see [Writing Tests](/platform/guardian-test/getting-started/writing-your-first-e2e-test/) and [Test Examples](/platform/guardian-test/getting-started/test-examples/.
 
 {% hint style="info" %}
 Valid GuardianTest scripts are the foundation of a valid browser check. If the script passes, your check passes. If the script fails, your check fails.

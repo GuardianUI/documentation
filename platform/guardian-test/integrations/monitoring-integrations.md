@@ -12,7 +12,7 @@ To get started with a **free trial** using GuardianUI's Continuous Monitoring, p
 
 ## Monitoring Overview
 
-Tests written with GuardianTest can be integrated with [GuardianUI](https://www.guardianui.com/)'s continuous frontend monitoring tool, which helps make sure your app continues working as expected post-production.&#x20;
+Tests written with GuardianTest can be integrated with GuardianUI's [continuous frontend monitoring tool](/platform/continuous-monitoring/), which helps make sure your app continues working as expected post-production.&#x20;
 
 Specifically, our monitoring platform detects whether your live app is creating the expected smart contract interactions for users, such as transactions pointing to the correct contracts and approvals giving the appropriate addresses access to user funds. If our system detects an issue, we will alert your team in real-time with actionable insights. _You can think of GuardianUI's monitoring solution as providing “continuous frontend auditing.”_
 

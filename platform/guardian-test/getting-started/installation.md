@@ -2,12 +2,12 @@
 
 ## Dependencies
 
-### Installing Node.js
+### Node.js
 
 * Check if you already have Node installed by opening a terminal or command prompt instance and executing `node -v`. You should see a version number in the return.
 * If you do not have Node already installed, go to [Node.js](https://nodejs.org/en/download) and select the version associated with your operating system.
 
-### Installing Foundry
+### Foundry
 
 Check if you already have [Anvil](https://github.com/foundry-rs/foundry/tree/master/anvil) installed through Foundry by opening a terminal or command prompt instance and executing `anvil -V`. You should see a version number in the return. If you do not, follow one of the guides below.
 
@@ -19,29 +19,27 @@ Check if you already have [Anvil](https://github.com/foundry-rs/foundry/tree/mas
 * **CI**
   * [Installation for CI](https://book.getfoundry.sh/getting-started/installation#installing-for-ci-in-github-action)
 
-## Installing GuardianTest
+### GuardianTest
 
 You can install GuardianTest using either npm or yarn:
 
-**npm**
+#### NPM
 
-`npm install @guardianui/test`
+`npm install --save-dev @guardianui/test`
 
-**yarn**
+#### Yarn
 
-`yarn add @guardianui/test`
+`yarn add --dev @guardianui/test`
 
-## Installing Playwright Browsers
+### Playwright Browsers
 
 `npx playwright install`
-
-
 
 ## Configuring the Framework
 
 ### Playwright Config
 
-At your repo's top-level directory create a file called `playwright.config.ts`
+At your repo's top-level directory create a file called `playwright.config.ts`.
 
 If you already are using Playwright and already have a `playwright.config.ts`, just add `/.*gui\.(js|ts|mjs)/` to the `testMatch` entry to make sure Playwright recognizes our tests.
 
@@ -155,19 +153,15 @@ const config: PlaywrightTestConfig = {
 export default config;
 ```
 
-
-
 ### env
 
 At your repo's top-level directory create another file called `.env` or if you already have one add the following to your existing `.env`. Comment out whichever line you do not use with a `#` at the start.
 
-```
+```bash
 # Must fill in one of these API keys, do not need both
 GUARDIAN_UI_INFURA_API_KEY=
 GUARDIAN_UI_ALCHEMY_API_KEY=
 ```
-
-
 
 ### package.json
 
@@ -177,8 +171,6 @@ To be able to run tests, add the following to your app's `package.json` scripts 
 "test:gui": "npx playwright test --project=chromium --headed"
 ```
 
-
-
 ### Tests Folder
 
-Create a folder called `tests` to house your GuardianTest tests in
+Create a folder called `tests` to house your GuardianTest tests in.
