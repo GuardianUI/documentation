@@ -41,7 +41,11 @@ You can install GuardianTest using either npm or yarn:
 
 At your repo's top-level directory create a file called `playwright.config.ts`.
 
-If you already are using Playwright and already have a `playwright.config.ts`, just add `/.*gui\.(js|ts|mjs)/` to the `testMatch` entry to make sure Playwright recognizes our tests.
+If you already are using Playwright and already have a `playwright.config.ts:`
+
+* Add `/.*gui\.(js|ts|mjs)/` to the `testMatch` entry to make sure Playwright recognizes our tests
+* Set `fullyParallel` to `false`
+* Set `workers` to `1`
 
 ```typescript
 import { devices, PlaywrightTestConfig } from '@playwright/test';

@@ -6,7 +6,7 @@
 
 ## Platform
 
-* [GuardianTest](platform/guardian-test/GuardianTest.md)
+* [GuardianTest](platform/readme/GuardianTest.md)
   * [Overview](platform/guardian-test/overview/README.md)
     * [Key Benefits](platform/guardian-test/overview/key-benefits.md)
     * [Framework Roadmap](platform/guardian-test/overview/framework-roadmap.md)
@@ -34,7 +34,7 @@
     * [Check Results](platform/continuous-monitoring/monitoring/check-results.md)
     * [How We Store Data](platform/continuous-monitoring/monitoring/how-we-store-data.md)
   * [Browser Checks](platform/continuous-monitoring/browser-checks/README.md)
-    * [Writing Tests](platform/guardian-test/getting-started/writing-your-first-e2e-test.md)
+    *
     * [Request Custom Test Writing](platform/continuous-monitoring/browser-checks/request-custom-test-writing.md)
     * [Submitting Tests for Monitoring](platform/continuous-monitoring/browser-checks/submitting-tests-for-monitoring.md)
   * [Alerts](platform/continuous-monitoring/alerts/README.md)

@@ -6,3 +6,5 @@ GuardianTest currently supports four popular EVM chains:
 * Arbitrum
 * Optimism
 * Polygon PoS
+
+NOTE: The framework is most thoroughly tested on Ethereum, you are more likely to bump into issues on other chains

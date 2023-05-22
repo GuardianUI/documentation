@@ -24,39 +24,6 @@ await gui.initializeChain(1, 17110784)
 
 
 
-### killChain
-
-Kills any existing forked networks. Should be used at the end of a test to make sure there are no collisions with tests spawning networks.
-
-#### **Inputs**
-
-* None
-
-#### **Usage**
-
-```javascript
-await gui.killChain()
-```
-
-
-
-### initializeWallet
-
-Updates the wallet provider in the injected wallet to use a specific chain ID.
-
-#### **Inputs**
-
-* `chainId` - The desired network chain ID to update the wallet provider
-
-#### **Usage**
-
-```javascript
-// Updates the wallet provider to connect to Arbitrum
-await gui.initializeWallet(42161);
-```
-
-
-
 ### setAllowance
 
 Sets the allowance of an address to spend the test wallet's ERC20 tokens to a specific amount.
