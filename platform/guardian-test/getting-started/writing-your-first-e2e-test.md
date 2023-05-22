@@ -299,10 +299,11 @@ test.describe("Olympus Example Suite", () => {
         await gui.setEthBalance("100000000000000000000000");
         
         // Set OHM balance
-        await gui.setAllowance("0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5", "0xb63cac384247597756545b500253ff8e607a8020", "1000000000000000000000000");
+        const ohmToken = "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5";
+        await gui.setAllowance(ohmToken, "0xb63cac384247597756545b500253ff8e607a8020", "1000000000000000000000000");
         
         // Set staking contract's approval to spend OHM
-        await gui.setBalance("0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5", "1000000000000000000000000");
+        await gui.setBalance(ohmToken, "1000000000000000000000000");
         
         // Connect wallet
         await page.waitForSelector("text=Connect Wallet");

@@ -4,8 +4,6 @@
 
 This is one of the simpler examples. It stakes OHM to gOHM and doesn't require any complex mocking beyond what is easily accessible via the GUI API.
 
-INSERT LINK HERE TO GITHUB WHEN PUBLIC
-
 ```javascript
 import { test } from "@framework/test";
 
@@ -53,8 +51,6 @@ test.describe("Olympus", () => {
 ### Bond Protocol (Subgraph Mocking)
 
 This is an example from Bond Protocol where we have to pin the block and mock their Subgraph to make sure that the site propagates the correct market we want to interact with.
-
-INSERT LINK HERE TO GITHUB WHEN PUBLIC
 
 ```typescript
 import { test } from "@framework/test";
@@ -166,9 +162,7 @@ test.describe("Bond Protocol Demo", () => {
 
 ### Bond Protocol (Complex Chain Interactions)
 
-This is a more complicated example from Bond Protocol where we first have to create a Fixed Expiry market on chain since none have been actually spun up at the time of writing the test.
-
-INSERT LINK HERE TO GITHUB WHEN PUBLIC
+This is a more complicated example from Bond Protocol where we first have to mimic the existence of a Fixed Expiry market on-chain since none have been actually spun up at the time of writing the test.
 
 ```typescript
 import { test } from "@framework/test";
