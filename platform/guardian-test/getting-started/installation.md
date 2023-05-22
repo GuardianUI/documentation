@@ -179,4 +179,4 @@ To be able to run tests, add the following to your app's `package.json` scripts 
 
 ### Tests Folder
 
-Create a folder called `tests` to house your GuardianTest tests in.
+Create a folder called `tests` to house your GuardianTest tests within.
