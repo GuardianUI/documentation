@@ -33,6 +33,8 @@ You can install GuardianTest using either npm or yarn:
 
 ### Playwright Browsers
 
+You will need to have the latest Playwright browser drivers installed.
+
 `npx playwright install`
 
 ## Configuring the Framework
